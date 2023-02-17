@@ -1,0 +1,3 @@
+﻿WorldNames
+내 방
+거실

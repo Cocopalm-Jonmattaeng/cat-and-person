@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 58ddfd55bb666bd45b1c7901d55e7517
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Eras Demi ITC
+  - NanumBarunGothic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e4ca2fa6260d9e04288d3a9093ec2d3f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
