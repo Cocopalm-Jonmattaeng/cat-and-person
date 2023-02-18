@@ -15,7 +15,7 @@ public class Move : MonoBehaviour
 
     public bool movable = true;
 
-    public Vector2 facing = new Vector2(0, -1);
+    public Vector2 facing = new(0, -1);
 
     public Sprite[] animSprites; // 0 left 4 right 8 up 12 down
     public Sprite[] idleSprites; // 0 left 1 right 2 up 3 down
@@ -37,7 +37,7 @@ public class Move : MonoBehaviour
     {
         var movVec = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Horizontal") == 0 ? Input.GetAxisRaw("Vertical") : 0);
 
-        var fSpd = ((Stat.instance.prop.speed * 0.01f) + 0.5f) * 2f * Time.deltaTime * movVec;
+        var fSpd = ((Stat.instance.prop.speed.StressedStat() * 0.01f) + 0.5f) * 2f * Time.deltaTime * movVec;
 
         if (!pui.menuOpened && movable) transform.Translate(fSpd);
         

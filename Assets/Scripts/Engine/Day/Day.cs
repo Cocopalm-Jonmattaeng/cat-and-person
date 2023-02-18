@@ -133,7 +133,7 @@ public class Day : MonoBehaviour
 
     private void Update()
     {
-        date.AddDate(0, 0, (Move.instance.movable ? Time.deltaTime : 0) * d_Multiplier);
+        date.AddDate(0, 0, (Move.instance.movable ? Time.deltaTime : 0) * d_Multiplier * Time.timeScale);
         Refresh();
 
         if (Input.GetKeyDown(KeyCode.KeypadPlus)) d_Multiplier *= 2;

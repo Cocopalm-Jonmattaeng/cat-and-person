@@ -6,9 +6,9 @@ public abstract class Choosable
 {
     protected NPC n;
 
-    public string text;
+    public KeyedText text;
 
-    public Choosable(NPC n, string t) { 
+    public Choosable(NPC n, KeyedText t) { 
         this.text = t;
         this.n = n;
     }

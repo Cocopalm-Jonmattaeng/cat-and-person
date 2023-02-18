@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using static TextManager;
@@ -41,6 +42,13 @@ public class StatDict {
 
             return prop;
         }
+    }
+}
+
+public static class StatExt {
+    public static int StressedStat(this int stat)
+    {
+        return (int)(stat * ((100 - (Stat.instance.prop.stress / 2)) * 0.01f));
     }
 }
 

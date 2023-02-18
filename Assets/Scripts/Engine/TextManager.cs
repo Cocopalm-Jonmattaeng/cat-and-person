@@ -178,7 +178,7 @@ public class TextManager : MonoBehaviour
             instance.cch = choosables;
 
             foreach (var cb in choosables) {
-                obj.GetComponentInChildren<Text>().text += $"<size=17>\n<color=#304FFE>Num{ind++}</color> {cb.text}</size>";
+                obj.GetComponentInChildren<Text>().text += $"<size=17>\n<color=#304FFE>Num{ind++}</color> {cb.text.text}</size>";
                 yield return new WaitForSeconds(0.333f);
             }
 
