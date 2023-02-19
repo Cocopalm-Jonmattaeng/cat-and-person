@@ -5,6 +5,7 @@ using System.IO;
 
 using UnityEngine;
 using static Day;
+using static Inventory;
 
 [Serializable]
 public class SData {
@@ -14,12 +15,15 @@ public class SData {
 
     public DDate date;
 
-    public SData(Vector2 pos, string name, StatDict prop, DDate d)
+    public Item[] items;
+
+    public SData(Vector2 pos, string name, StatDict prop, DDate d, Item[] items)
     {
         this.pos = pos;
         this.name = name;
         this.prop = prop;
         date = d;
+        this.items = items;
     }
 }
 
@@ -62,7 +66,7 @@ public class SaveLoadUtility : MonoBehaviour
         {
             instance.data = JsonUtility.FromJson<SData>(File.ReadAllText(Application.persistentDataPath + "/savef.ile"));
         }
-        catch (Exception e) {
+        catch (Exception) {
 
             instance.data = new(
                 Vector2.zero,
@@ -73,8 +77,25 @@ public class SaveLoadUtility : MonoBehaviour
                     0,
                     25,
                     0
-                    ),
-                new(2023, 1, 0.0f)
+                ),
+                new(2023, 1, 0.0f),
+                new Item[15] { 
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0),
+                    new Item(0, 0)
+                }
             );
         }
     }
