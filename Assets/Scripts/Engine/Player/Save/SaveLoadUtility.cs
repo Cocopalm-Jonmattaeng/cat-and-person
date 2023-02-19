@@ -66,7 +66,8 @@ public class SaveLoadUtility : MonoBehaviour
         {
             instance.data = JsonUtility.FromJson<SData>(File.ReadAllText(Application.persistentDataPath + "/savef.ile"));
         }
-        catch (Exception) {
+        catch (Exception)
+        {
 
             instance.data = new(
                 Vector2.zero,
@@ -79,7 +80,7 @@ public class SaveLoadUtility : MonoBehaviour
                     0
                 ),
                 new(2023, 1, 0.0f),
-                new Item[15] { 
+                new Item[15] {
                     new Item(0, 0),
                     new Item(0, 0),
                     new Item(0, 0),
@@ -97,6 +98,9 @@ public class SaveLoadUtility : MonoBehaviour
                     new Item(0, 0)
                 }
             );
+        }
+        finally {
+            Move.instance.transform.localPosition = instance.data.pos;
         }
     }
 }

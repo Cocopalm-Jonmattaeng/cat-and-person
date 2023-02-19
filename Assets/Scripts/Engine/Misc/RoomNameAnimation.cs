@@ -11,7 +11,7 @@ public class RoomNameAnimation : MonoBehaviour
     void Start()
     {
         rNT = GetComponentInChildren<Text>();
-        transform.localPosition = new Vector2(-(Screen.width / 2), -(Screen.height / 2));
+        transform.localPosition = new Vector2(-(Screen.width / 2), -(Screen.height / 2) + 10);
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class RoomNameAnimation : MonoBehaviour
 
     public void Animate(string name) {
         rNT.text = name;
-        transform.localPosition = new Vector2(-(Screen.width / 2), -(Screen.height / 2));
+        transform.localPosition = new Vector2(-(Screen.width / 2), -(Screen.height / 2) + 10);
         StopAllCoroutines();
 
         StartCoroutine(AnimateInternal());

@@ -340,6 +340,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bedroom_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0675cf399e4b02c4f8b37ba9459ce7f6
+      internalID: 1479160166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0d8e3242a0be940990ad0664b5227e
+      internalID: -1097974163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92480026aa108394c8ddbf1dd2ea91be
+      internalID: 1917776286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18047df2a2af3404fa9b521388c14a3a
+      internalID: -1174083764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -353,6 +437,7 @@ TextureImporter:
     nameFileIdTable:
       bedroom_5: 553722925
       bedroom_8: 1562769235
+      bedroom_13: -1174083764
       bedroom_0: -762480389
       bedroom_2: -1747652172
       bedroom_3: -1987915290
@@ -360,7 +445,10 @@ TextureImporter:
       bedroom_7: 1101600238
       bedroom_9: 855734855
       bedroom_6: -60894974
+      bedroom_12: 1917776286
+      bedroom_11: -1097974163
       bedroom_1: -1132262059
+      bedroom_10: 1479160166
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

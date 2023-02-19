@@ -17,6 +17,8 @@ public class InventoryItemViewObjectHolder : MonoBehaviour
     public Button uB;
     public Button tB;
 
+    public int sID = 0;
+
     private void Start()
     {
         instance = this;

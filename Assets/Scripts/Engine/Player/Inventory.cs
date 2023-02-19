@@ -102,6 +102,8 @@ public class Inventory : MonoBehaviour
             if (items[i].id == 0)
             {
                 items[i] = rItem;
+                Validator();
+                return;
             }
         }
 
@@ -112,7 +114,7 @@ public class Inventory : MonoBehaviour
     {
         if (Count() <= 0) return;
 
-        for (int i = 0; i < 15; i++)
+        for (int i = 14; i > -1; i--)
         {
             if (items[i].id == id)
             {
@@ -126,7 +128,7 @@ public class Inventory : MonoBehaviour
     public static void RemoveItem(Item item) {
         if (Count() <= 0) return;
 
-        for (int i = 0; i < 15; i++)
+        for (int i = 14; i > -1; i--)
         {
             if (items[i].id == item.id)
             {

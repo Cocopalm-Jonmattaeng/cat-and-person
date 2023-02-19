@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,12 +29,13 @@ public class InventoryItemSlotInit : MonoBehaviour
     {
         itemDetail.SetActive(false);
 
-        if (GameObject.FindWithTag("InvenItem") != null)
+        foreach (var go in GameObject.FindGameObjectsWithTag("InvenItem"))
         {
-            foreach (var go in GameObject.FindGameObjectsWithTag("InvenItem"))
+            try
             {
                 Destroy(go);
             }
+            catch (Exception) { }
         }
 
         for (int i = 0; i < 15; i++) {
